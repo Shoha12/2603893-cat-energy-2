@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Шохрух Якубов](https://up.htmlacademy.ru/adaptive-individual/2/user/2603893).
-* Наставник: `Евгения П.`.
+* Наставник: [Евгения П.](https://htmlacademy.ru/profile/id2387199).
 
 ---
 
