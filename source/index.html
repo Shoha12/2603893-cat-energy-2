@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <title>Кэт Энэрджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favimages/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favimages/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -12,8 +16,17 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__container">
-      <a class="main-header__logo" href="#">
-        <img class="logo" src="/images/logo-desktop.svg" alt="Cat energy logotype" width="220" height="59">
+      <a class="main-header__logo logo" href="index.html">
+        <picture>
+          <source media="(min-width:1200px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-pic.svg">
+          <source media="(min-width:768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-pic.svg">
+          <img class="logo__pic" src="images/logo-pic.svg" alt="Логотип Кэт Энерджи" width="33" height="38">
+        </picture>
+        <picture>
+          <source media="(min-width:1200px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-text.svg">
+          <source media="(min-width:768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo-text.svg">
+          <img class="logo__text" src="images/logo-text.svg" alt="Текст логотипа" width="101" height="18">
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toogle" type="button">
@@ -35,18 +48,23 @@
   </header>
   <main class="main-container">
 
-    <section class="promo">
+    <section class="main-container__promo promo">
       <div class="promo__wrapper">
         <h1 class="promo__title">
           Функциональное <br>
           питание для котов
         </h1>
+        <picture>
+          <source media="(min-width:1200px)" width="552" height="409" type="image/jpeg" srcset="images/index-can@1x.webp 1x, images/index-can@2x.webp 2x">
+          <source media="(min-width:768px)" width="709" height="609" type="image/jpeg" srcset="images/index-can-tablet@1x.webp 1x, images/index-can-tablet@2x.webp 2x">
+          <img class="promo__img" src="images/index-can-mobile@1x.webp" srcset="images/index-can-mobile@2x.webp 2x" width="280" height="270" alt="Банка Кэт Энерджи с курицей">
+        </picture>
         <p class="promo__slogan">Занялся собой? Займись котом</p>
         <button class="promo__button button" type="button">подобрать программу</button>
       </div>
     </section>
 
-    <section class="category">
+    <section class="main-container__category category">
       <h2 class="visually-hidden">Категория продуктов</h2>
       <div class="category__wrapper">
         <ul class="category__list">
@@ -72,47 +90,43 @@
       </div>
     </section>
 
-    <section class="steps">
+    <section class="main-container__steps steps">
       <div class="steps__wrapper">
         <h2 class="steps__title">Как это работает</h2>
-        <ul class="steps__list">
-          <li class="steps__item">
-            <span class="steps__icon steps__icon--leaf"></span>
+        <ol class="steps__list">
+          <li class="steps__item steps__item--leaf">
             <p class="steps__description">
               Функциональное питание <br>
               содержит только полезные <br>
               питательные вещества.
             </p>
           </li>
-          <li class="steps__item">
-            <span class="steps__icon steps__icon--powder"></span>
+          <li class="steps__item steps__item--powder">
             <p class="steps__description">
               Выпускается в виде порошка, <br>
               который нужно лишь залить <br>
               кипятком и готово.
             </p>
           </li>
-          <li class="steps__item">
-            <span class="steps__icon steps__icon--food"></span>
+          <li class="steps__item steps__item--food">
             <p class="steps__description">
               Замените один-два приема <br>
               обычной еды на наше <br>
               функциональное питание.
             </p>
           </li>
-          <li class="steps__item">
-            <span class="steps__icon steps__icon--time"></span>
+          <li class="steps__item steps__item--time">
             <p class="steps__description">
               Уже через месяц наслаждайтесь <br>
               изменениями к лучшему <br>
               вашего питомца!
             </p>
           </li>
-        </ul>
+        </ol>
       </div>
     </section>
 
-    <section class="transformation">
+    <section class="main-container__transformation transformation">
       <div class="transformation__wrapper">
         <h2 class="transformation__title">Живой пример</h2>
         <p class="transformation__description">
@@ -132,14 +146,19 @@
           </figure>
         </div>
       </div>
+      <div class="main-container__slider slider">
+        <div class="slider__wrapper">
+          .slider
+        </div>
+      </div>
     </section>
 
-    <section class="map">
+    <section class="main-container__map map">
       <h2 class="visually-hidden">Карта</h2>
       <div class="map__wrapper">
         <div class="map__adress adress">
           <span class="adress text"></span>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257261267!2d30.320467112943575!3d59.93871916198889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2slv!4v1741600348373!5m2!1sru!2slv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257261267!2d30.320467112943575!3d59.93871916198889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2slv!4v1741600348373!5m2!1sru!2slv" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>
@@ -147,8 +166,8 @@
 
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <div class="main-footer__logo logo">
-        <img class="logo__img" src="images/footer-logo.svg" alt="Кэт Энерджи логотип" width="128" height="24">
+      <div class="main-footer__logo">
+        <img class="main-footer__logo-icon" src="images/footer-logo.svg" alt="Кэт Энерджи логотип" width="128" height="24">
       </div>
       <div class="main-footer__social social">
         <ul class="social__list">
@@ -171,7 +190,11 @@
       </div>
       <div class="main-footer__autor autor">
         <a class="autor__link" href="#">
-          <img class="autor__img" src="images/html-academy.svg" alt="html academy логотип" width="168" height="37">
+          <picture>
+            <source media="(min-width:1200px)" width="168" height="37" type="image/svg+xml" srcset="images/html-academy.svg">
+            <source media="(min-width:768px)" width="168" height="37" type="image/svg+xml" srcset="images/html-academy.svg">
+            <img class="autor__img" src="images/html-academy-mobile.svg" alt="html academy логотип" width="280" height="34">
+          </picture>
         </a>
       </div>
     </div>
