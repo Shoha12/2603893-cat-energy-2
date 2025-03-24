@@ -3,21 +3,25 @@
     font-size: 36px;
     line-height: 40px;
   }
+
   &__description {
     color: $secodary-text-color;
     font-family: $secondary-font;
     line-height: 18px;
   }
+
   &__weight {
     font-size: 24px;
     line-height: 24px;
     text-align: center;
   }
+
   &__result {
     font-family: $secondary-font;
     font-size: 12px;
     line-height: 12px;
   }
+
   &__text {
     line-height: 20px;
     text-transform: uppercase;

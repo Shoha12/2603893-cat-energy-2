@@ -1,6 +1,7 @@
 .additional {
   &__gift {
     background-color: $bg-color-primary;
+
     &-description {
       text-align: center;
       font-family: $secondary-font;
@@ -9,5 +10,5 @@
       color: #ffffff;
     }
   }
-  }
+}
 
