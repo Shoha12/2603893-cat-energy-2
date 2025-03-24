@@ -1,0 +1,25 @@
+.catalog-list {
+  &__title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  &__netto {
+    color: $secodary-text-color;
+    font-family: $secondary-font;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  &__button {
+    padding: 10px 110px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    &--more {
+      padding: 10px 96px;
+      color: $secodary-text-color;
+      background-color: #F2F2F2;
+    }
+  }
+}

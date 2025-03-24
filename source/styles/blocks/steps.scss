@@ -1,0 +1,10 @@
+.steps {
+  &__title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  &__description {
+    font-family: $secondary-font;
+    line-height: 18px;
+  }
+}

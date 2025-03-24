@@ -1,0 +1,23 @@
+.category {
+  &__list {
+    list-style-type: none;
+  }
+  &__title {
+    color: $primary-text-color;
+    font-size: 24px;
+    line-height: 37px;
+    text-transform: uppercase;
+  }
+  &__description {
+    font-family: $secondary-font;
+    color: $secodary-text-color;
+    line-height: 18px;
+  }
+  &__link {
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $primary-text-color;
+  }
+}
