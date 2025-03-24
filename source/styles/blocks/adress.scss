@@ -1,15 +1,18 @@
 .adress {
   background-color: #ffffff;
+
   &__text {
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
   }
+
   &__info {
     font-family: $secondary-font;
     color: $secodary-text-color;
     line-height: 20px;
   }
+
   &--gray {
     background-color: #f2f2f2;
   }
