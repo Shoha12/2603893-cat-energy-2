@@ -1,0 +1,21 @@
+.promo {
+  &__title {
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 36px;
+  }
+  &__slogan {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+  }
+  &__button {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 64px;
+    text-transform: uppercase;
+  }
+}

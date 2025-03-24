@@ -1,0 +1,13 @@
+.additional {
+  &__gift {
+    background-color: $bg-color-primary;
+    &-description {
+      text-align: center;
+      font-family: $secondary-font;
+      font-size: 16px;
+      line-height: 20px;
+      color: #ffffff;
+    }
+  }
+  }
+
