@@ -1,0 +1,13 @@
+.autor {
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $secondary-font;
+    font-size: 16px;
+    color: $secodary-text-color;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: none;
+  }
+}

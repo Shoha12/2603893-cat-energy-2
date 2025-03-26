@@ -1,16 +1,21 @@
 .adress {
   background-color: #ffffff;
+  padding: 26px 20px;
+  display: flex;
+  justify-content: space-between;
 
   &__text {
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
+    width: 140px;
   }
 
   &__info {
     font-family: $secondary-font;
     color: $secodary-text-color;
     line-height: 20px;
+    width: 140px;
   }
 
   &--gray {

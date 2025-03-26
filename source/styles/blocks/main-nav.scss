@@ -1,0 +1,11 @@
+.main-nav {
+  position: absolute;
+  top: -100%;
+  width: 100%;
+  background-color: #ffffff;
+
+  &--active {
+    top: 66px;
+    z-index: 2;
+  }
+}
