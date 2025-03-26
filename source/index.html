@@ -28,23 +28,26 @@
           <img class="logo__text" src="images/logo-mobile-text.svg" alt="Текст логотипа" width="101" height="18">
         </picture>
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toogle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--current" href="index.html">главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="hamburger hamburger--active">
+        <span class="visually-hidden">Открыть меню</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
+    <nav class="main-nav main-nav--active">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--current" href="index.html">главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">подбор программы</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main class="main-container">
 
@@ -60,18 +63,15 @@
           <source media="(min-width:768px)" width="709" height="609" type="image/jpeg" srcset="images/index-can-tablet@1x.webp 1x, images/index-can-tablet@2x.webp 2x">
           <img class="promo__img" src="images/index-can-mobile@1x.webp" srcset="images/index-can-mobile@2x.webp 2x" width="280" height="270" alt="Банка Кэт Энерджи с курицей">
         </picture>
-        <button class="promo__button button" type="button">подобрать программу</button>
       </div>
+      <button class="promo__button button" type="button">подобрать программу</button>
     </section>
 
     <section class="main-container__category category">
       <h2 class="visually-hidden">Категория продуктов</h2>
       <div class="category__wrapper">
         <ul class="category__list">
-          <li class="category__item">
-            <div class="category__block">
-              <span class="category__icon category__icon--slim"></span>
-            </div>
+          <li class="category__item category__item--slim">
             <h3 class="category__title">похудение</h3>
             <p class="category__description">
               Ваш кот весит больше собаки и почти утратил способность
@@ -80,10 +80,7 @@
             </p>
             <a class="category__link" href="#">каталог slim</a>
           </li>
-          <li class="category__item">
-            <div class="category__block">
-              <span class="category__icon category__icon--gain"></span>
-            </div>
+          <li class="category__item category__item--gain">
             <h3 class="category__title">набор массы</h3>
             <p class="category__description">
               Заработать авторитет среди дворовых котов и даже собак?
@@ -100,43 +97,31 @@
       <div class="steps__wrapper">
         <h2 class="steps__title">Как это работает</h2>
         <ol class="steps__list">
-          <li class="steps__item">
-            <div class="steps__block">
-              <span class="steps__icon steps__icon--leaf"></span>
-            </div>
+          <li class="steps__item steps__item--leaf">
             <p class="steps__description">
               Функциональное питание <br>
               содержит только полезные <br>
               питательные вещества.
             </p>
           </li>
-          <li class="steps__item">
-            <div class="steps__block">
-              <span class="steps__icon steps__icon--powder"></span>
-            </div>
+          <li class="steps__item steps__item--powder">
             <p class="steps__description">
               Выпускается в виде порошка, <br>
               который нужно лишь залить <br>
               кипятком и готово.
             </p>
           </li>
-          <li class="steps__item">
-            <div class="steps__block">
-              <span class="steps__icon steps__icon--food"></span>
-            </div>
+          <li class="steps__item steps__item--food">
             <p class="steps__description">
               Замените один-два приема <br>
               обычной еды на наше <br>
               функциональное питание.
             </p>
           </li>
-          <li class="steps__item">
-            <div class="steps__block">
-              <span class="steps__icon steps__icon--time"></span>
-            </div>
+          <li class="steps__item steps__item--time">
             <p class="steps__description">
-              Уже через месяц наслаждайтесь <br>
-              изменениями к лучшему <br>
+              Уже через месяц <br>наслаждайтесь
+              изменениями к лучшему
               вашего питомца!
             </p>
           </li>
@@ -148,22 +133,22 @@
       <div class="transformation__wrapper">
         <h2 class="transformation__title">Живой пример</h2>
         <p class="transformation__description">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой <br>
-          обычный корм на Cat Energy Slim. Отличный результат <br>
-          без изнуряющих тренировок! При этом он не менял своих <br>
-          привычек и по-прежнему спит по 16 часов в день.
+          Борис сбросил 5 кг за 2 месяца, просто <br>заменив свой
+          обычный корм на Cat Energy<br>Slim. Отличный результат
+          без изнуряющих <br>тренировок! При этом он не менял своих<br>
+          привычек и по-прежнему спит по 16 часов<br>в день.
         </p>
         <div class="transformation__container">
           <figure class="transformation__info">
-            <span class="transformation__weight">5 КГ</span>
+            <span class="transformation__example">5 КГ</span>
             <figcaption class="transformation__result">снижение веса</figcaption>
           </figure>
           <figure class="transformation__info">
-            <span class="transformation__time">60 ДНЕЙ</span>
+            <span class="transformation__example">60 ДНЕЙ</span>
             <figcaption class="transformation__result">затрачено времени</figcaption>
           </figure>
-          <p class="transformation__text">Затраты на питание: 15 000 РУБ.</p>
         </div>
+        <p class="transformation__text">Затраты на питание: 15 000 РУБ.</p>
       </div>
       <div class="main-container__slider slider">
         <div class="slider__wrapper">
@@ -210,11 +195,8 @@
       </div>
       <div class="main-footer__autor autor">
         <a class="autor__link" href="#">
-          <picture>
-            <source media="(min-width:1200px)" width="168" height="37" type="image/svg+xml" srcset="images/html-academy-desktop.svg">
-            <source media="(min-width:768px)" width="168" height="37" type="image/svg+xml" srcset="images/html-academy-desktop.svg">
-            <img class="autor__img" src="images/html-academy.svg" alt="html academy логотип" width="280" height="34">
-          </picture>
+          HTML Academy
+          <img class="autor__img" src="images/htmlacademy.svg" alt="html academy логотип" width="27" height="34">
         </a>
       </div>
     </div>

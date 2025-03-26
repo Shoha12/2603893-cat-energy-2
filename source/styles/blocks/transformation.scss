@@ -1,16 +1,31 @@
 .transformation {
+  background-color: #eaeaea;
+
+  &__wrapper {
+    padding: 25px 20px 40px;
+  }
+
   &__title {
     font-size: 36px;
     line-height: 40px;
+    font-weight: 400;
+    margin-bottom: 40px;
   }
 
   &__description {
     color: $secodary-text-color;
     font-family: $secondary-font;
     line-height: 18px;
+    margin-bottom: 20px;
   }
 
-  &__weight {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__example {
     font-size: 24px;
     line-height: 24px;
     text-align: center;
@@ -25,5 +40,6 @@
   &__text {
     line-height: 20px;
     text-transform: uppercase;
+    text-align: center;
   }
 }
