@@ -1,4 +1,43 @@
 .steps {
+  &__block {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: $bg-color-primary;
+  }
+
+  &__icon {
+    display: inline-block;
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &--leaf {
+      background-image: url("../../icons/stack.svg#icon-leaf");
+      width: 30px;
+      height: 32px;
+    }
+
+    &--powder {
+      background-image: url("../../icons/stack.svg#icon-powder");
+      width: 27px;
+      height: 29px;
+    }
+
+    &--food {
+      background-image: url("../../icons/stack.svg#icon-eat");
+      width: 25px;
+      height: 30px;
+    }
+
+    &--time {
+      background-image: url("../../icons/stack.svg#icon-time");
+      width: 27px;
+      height: 31px;
+    }
+  }
+
   &__title {
     font-size: 36px;
     line-height: 40px;
