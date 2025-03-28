@@ -7,6 +7,8 @@
 
 
 /* BLOCKS */
+@import "./blocks/main-title.scss";
+@import "./blocks/basic-description.scss";
 @import "./blocks/hamburger.scss";
 @import "./blocks/button.scss";
 @import "./blocks/page.scss";
@@ -24,10 +26,10 @@
 @import "./blocks/main-footer.scss";
 @import "./blocks/social.scss";
 @import "./blocks/autor.scss";
-@import "./blocks/main-title.scss";
-@import "./blocks/catalog-card.scss";
+@import "./blocks/catalog-cards.scss";
 @import "./blocks/catalog-list.scss";
 @import "./blocks/additional.scss";
+@import "./blocks/additional-list.scss";
 @import "./blocks/action.scss";
 @import "./blocks/form.scss";
 @import "./blocks/slider.scss";

@@ -6,35 +6,44 @@
   }
 
   &__title {
-    font-size: 36px;
-    line-height: 40px;
-    font-weight: 400;
     margin-bottom: 40px;
   }
 
   &__description {
-    color: $secodary-text-color;
-    font-family: $secondary-font;
-    line-height: 18px;
     margin-bottom: 20px;
   }
 
   &__container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 37px;
+  }
+
+  &__info {
+    position: relative;
+    width: 124px;
+    padding: 15px 20px;
+    border: 1px solid #cdcdcd;
   }
 
   &__example {
+    display: block;
     font-size: 24px;
     line-height: 24px;
     text-align: center;
   }
 
   &__result {
+    position: absolute;
     font-family: $secondary-font;
     font-size: 12px;
     line-height: 12px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -17px;
+    background-color: #eaeaea;
+    width: 77px;
   }
 
   &__text {

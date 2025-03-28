@@ -1,0 +1,38 @@
+.additional-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+
+  &__item {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #d9d9d9;
+      bottom: -19px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 13px;
+  }
+
+  &__netto {
+    margin-bottom: 15px;
+  }
+
+  &__button {
+    display: block;
+    width: 100%;
+  }
+}

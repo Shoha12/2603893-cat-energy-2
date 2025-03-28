@@ -2,13 +2,25 @@
   &__title {
     font-size: 16px;
     line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  &__input {
+    margin-bottom: 16px;
+    width: 100%;
+    padding: 13px;
+    font-family: $primary-font;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $secodary-text-color;
+    border: 1px solid #cdcdcd;
   }
 
   &__button {
-    padding: 15px 82px;
-    color: #ffffff;
-    font-size: 20px;
-    line-height: 26px;
-    text-transform: uppercase;
+    padding: 15px 0;
+    width: 100%;
   }
 }
