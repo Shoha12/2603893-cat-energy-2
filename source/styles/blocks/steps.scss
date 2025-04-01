@@ -1,6 +1,16 @@
 .steps {
   &__wrapper {
     padding: 0 20px 49px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 30px 47px;
+      border-bottom: 1px solid #e6e6e6;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 110px 69px;
+      border-bottom: none;
+    }
   }
 
   &__list {
@@ -9,10 +19,27 @@
     flex-direction: column;
     list-style-type: none;
     gap: 24px;
+
+    @media (min-width: $tablet-width) {
+      flex-flow: row wrap;
+      justify-content: space-between;
+      gap: 0;
+      row-gap: 37px;
+    }
   }
 
   &__item {
-    margin-left: 80px;
+    padding-left: 80px;
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+      margin-left: 0;
+      padding: 151px 26px 57px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 151px 0 57px;
+    }
 
     &--leaf::before {
       content: "";
@@ -21,6 +48,19 @@
       width: 60px;
       height: 60px;
       left: 0;
+
+      @media (min-width: $tablet-width) {
+        width: 80px;
+        height: 80px;
+        top: 47px;
+        left: 0;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 80px;
+        height: 80px;
+        top: 45px;
+      }
     }
 
     &--powder::before {
@@ -30,6 +70,19 @@
       width: 60px;
       height: 60px;
       left: 0;
+
+      @media (min-width: $tablet-width) {
+        width: 80px;
+        height: 80px;
+        top: 47px;
+        left: 0;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 80px;
+        height: 80px;
+        top: 45px;
+      }
     }
 
     &--food::before {
@@ -39,6 +92,19 @@
       width: 60px;
       height: 60px;
       left: 0;
+
+      @media (min-width: $tablet-width) {
+        width: 80px;
+        height: 80px;
+        top: 40px;
+        left: 0;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 80px;
+        height: 80px;
+        top: 45px;
+      }
     }
 
     &--time::before {
@@ -48,14 +114,61 @@
       width: 60px;
       height: 60px;
       left: 0;
+
+      @media (min-width: $tablet-width) {
+        width: 80px;
+        height: 80px;
+        top: 38px;
+        left: 0;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 80px;
+        height: 80px;
+        top: 45px;
+      }
     }
   }
 
   &__title {
-    margin-bottom: 42px;
+    margin-bottom: 40px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 32px;
+    }
   }
 
   &__description {
-    margin-top: 2px;
+    margin-top: 3px;
+
+    @media (min-width: $tablet-width) {
+      width: 245px;
+      line-height: 24px;
+    }
+  }
+
+  &__number {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 0;
+      right: 26px;
+      display: block;
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+      z-index: -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 0;
+    }
+
+    &--first {
+      @media (min-width: $desktop-width) {
+        right: 18px;
+      }
+    }
   }
 }

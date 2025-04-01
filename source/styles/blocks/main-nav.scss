@@ -8,4 +8,17 @@
     top: 66px;
     z-index: 2;
   }
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    width: 436px;
+    margin-left: auto;
+    align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 476px;
+    z-index: 5;
+    background-color: transparent;
+  }
 }

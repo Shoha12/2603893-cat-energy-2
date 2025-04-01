@@ -3,12 +3,31 @@
   padding: 26px 20px;
   display: flex;
   justify-content: space-between;
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px;
+    position: static;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 565px;
+    padding: 60px 78px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 110px;
+  }
 
   &__text {
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
     width: 140px;
+
+    @media (min-width: $tablet-width) {
+      width: 163px;
+      font-size: 20px;
+      line-height: 26px;
+    }
   }
 
   &__description {
@@ -16,6 +35,10 @@
     color: $secodary-text-color;
     line-height: 20px;
     width: 140px;
+
+    @media (min-width: $tablet-width) {
+      width: 157px;
+    }
   }
 
   &--gray {
