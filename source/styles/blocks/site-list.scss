@@ -31,6 +31,18 @@
     text-decoration: none;
     color: #000000;
 
+    @media (min-width: $tablet-width) {
+      color: #000000;
+      padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      color: #ffffff;
+      font-size: 20px;
+      line-height: normal;
+      padding: 0;
+    }
+
     &--current::before {
       content: "";
       width: 100%;
@@ -50,16 +62,8 @@
       }
     }
 
-    @media (min-width: $tablet-width) {
+    &--black {
       color: #000000;
-      padding: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      color: #ffffff;
-      font-size: 20px;
-      line-height: normal;
-      padding: 0;
     }
   }
 
