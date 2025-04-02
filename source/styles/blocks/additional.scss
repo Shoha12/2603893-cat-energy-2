@@ -1,10 +1,33 @@
 .additional {
   &__wrapper {
     padding: 25px 20px 35px;
+
+    @media (min-width: $tablet-width) {
+      padding: 74px 30px 80px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 71px 110px 96px;
+    }
+  }
+
+  &__container {
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
   }
 
   &__block {
     margin-bottom: 35px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+      width: 896px;
+    }
   }
 
   &__gift {
@@ -13,6 +36,21 @@
     background: linear-gradient(0deg, rgba(104, 183, 56, 0.85) 20%, rgba(104, 183, 56, 0.85) 80%), url("../../images/gift-bg-mobile@1x.webp");
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (min-width: $tablet-width) {
+      padding: 71px 125px 69px 0;
+      background: linear-gradient(0deg, rgba(104, 183, 56, 0.85) 20%, rgba(104, 183, 56, 0.85) 80%), url("../../images/gift-bg-tablet@1x.webp");
+      background-repeat: no-repeat;
+      margin-left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 185px 42px 43px;
+      background: linear-gradient(0deg, rgba(104, 183, 56, 0.85) 20%, rgba(104, 183, 56, 0.85) 80%), url("../../images/gift-bg-desktop@1x.webp");
+      background-repeat: no-repeat;
+      width: 245px;
+      margin-left: 80px;
+    }
 
     &::after {
       content: "";
@@ -23,6 +61,20 @@
       top: 58px;
       left: 50%;
       transform: translateX(-50%);
+
+      @media (min-width: $tablet-width) {
+        width: 80px;
+        height: 82px;
+        left: 107px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 80px;
+        height: 82px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 56px;
+      }
     }
 
     &-description {
@@ -31,6 +83,17 @@
       font-size: 16px;
       line-height: 20px;
       color: #ffffff;
+
+      @media (min-width: $tablet-width) {
+        display: flex;
+        text-align: left;
+        justify-content: end;
+      }
+
+      @media (min-width: $desktop-width) {
+        display: block;
+        text-align: center;
+      }
     }
   }
 
@@ -39,6 +102,17 @@
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 36px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 32px;
+      line-height: 32px;
+      margin-bottom: 80px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 40px;
+      line-height: 40px;
+    }
   }
 }
 
