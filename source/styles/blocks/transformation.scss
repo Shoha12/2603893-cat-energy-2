@@ -9,10 +9,10 @@
   }
 
   &__wrapper {
-    padding: 0 20px 40px;
+    padding: 0 20px 19px;
 
     @media (min-width: $tablet-width) {
-      padding: 0 30px 150px;
+      padding: 0 30px 158px;
     }
 
     @media (min-width: $desktop-width) {
@@ -22,13 +22,13 @@
   }
 
   &__title {
-    margin-bottom: 40px;
-    padding-top: 25px;
+    margin-bottom: 47px;
+    padding-top: 26px;
     padding-left: 20px;
 
     @media (min-width: $tablet-width) {
       padding-top: 45px;
-      margin-bottom: 60px;
+      margin-bottom: 56px;
       padding-left: 30px;
     }
 
@@ -40,10 +40,10 @@
   }
 
   &__description {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 60px;
+      margin-bottom: 55px;
       line-height: 24px;
     }
 
@@ -57,7 +57,7 @@
   &__container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 32px;
+    margin-bottom: 35px;
 
     @media (min-width: $tablet-width) {
       gap: 43px;

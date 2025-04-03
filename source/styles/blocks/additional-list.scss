@@ -2,7 +2,7 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 31px;
+  gap: 19px;
 
   @media (min-width: $tablet-width) {
     gap: 0;
@@ -10,6 +10,13 @@
 
   &__item {
     position: relative;
+    border-top: 1px solid #cdcdcd;
+    padding-top: 8px;
+
+    &:last-child {
+      border-bottom: 1px solid #cdcdcd;
+      padding-bottom: 12px;
+    }
 
     @media (min-width: $tablet-width) {
       display: flex;
@@ -33,20 +40,6 @@
         border-left: none;
       }
     }
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 1px;
-      background-color: #d9d9d9;
-      bottom: -19px;
-      display: block;
-
-      @media (min-width: $tablet-width) {
-        display: none;
-      }
-    }
   }
 
   &__container {
@@ -54,11 +47,10 @@
     justify-content: space-between;
 
     @media (min-width: $tablet-width) {
-      width: 223px;
       margin-left: auto;
     }
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $desktop-width) {
       width: 285px;
       margin-left: auto;
       align-items: center;
@@ -87,15 +79,23 @@
   }
 
   &__netto {
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
+
+      &:nth-child(2) {
+        margin-left: 51px;
+      }
     }
 
     @media (min-width: $desktop-width) {
       margin-bottom: 0;
       line-height: 20px;
+
+      &:nth-child(2) {
+        margin-left: 0;
+      }
     }
   }
 

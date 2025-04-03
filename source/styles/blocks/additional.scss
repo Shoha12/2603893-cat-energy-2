@@ -1,6 +1,6 @@
 .additional {
   &__wrapper {
-    padding: 25px 20px 35px;
+    padding: 25px 20px 40px;
 
     @media (min-width: $tablet-width) {
       padding: 74px 30px 80px;
@@ -18,10 +18,10 @@
   }
 
   &__block {
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 70px;
+      margin-bottom: 80px;
     }
 
     @media (min-width: $desktop-width) {
@@ -65,7 +65,7 @@
       @media (min-width: $tablet-width) {
         width: 80px;
         height: 82px;
-        left: 107px;
+        left: 119px;
       }
 
       @media (min-width: $desktop-width) {
