@@ -62,8 +62,10 @@
       }
     }
 
-    &--black {
-      color: #000000;
+    &--catalog {
+      @media (min-width: ($desktop-width)) {
+        color: #000000;
+      }
     }
   }
 

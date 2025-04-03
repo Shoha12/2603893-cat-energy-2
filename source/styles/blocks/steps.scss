@@ -3,7 +3,7 @@
     padding: 0 20px 49px;
 
     @media (min-width: $tablet-width) {
-      padding: 0 30px 47px;
+      padding: 0 85px 47px 30px;
       border-bottom: 1px solid #e6e6e6;
     }
 
@@ -131,7 +131,7 @@
   }
 
   &__title {
-    margin-bottom: 40px;
+    margin-bottom: 42px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 32px;
@@ -166,6 +166,10 @@
     }
 
     &--first {
+      @media (min-width: $tablet-width) {
+        right: 43px;
+      }
+
       @media (min-width: $desktop-width) {
         right: 18px;
       }
