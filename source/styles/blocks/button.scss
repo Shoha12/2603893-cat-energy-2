@@ -7,4 +7,13 @@
   line-height: 20px;
   text-transform: uppercase;
   padding: 10px 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active &-text {
+    opacity: 0.3;
+  }
 }
