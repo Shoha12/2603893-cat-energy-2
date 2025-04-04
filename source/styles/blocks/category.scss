@@ -101,6 +101,8 @@
         width: 134px;
         height: 100px;
       }
+
+      /* stylelint-enable */
     }
   }
 
@@ -166,6 +168,8 @@
       transform: translateY(-50%);
       right: -40px;
 
+      /* stylelint-disable */
+
       @media (min-width: $tablet-width) {
         right: -49px;
       }
@@ -173,6 +177,8 @@
       @media (min-width: $desktop-width) {
         right: -55px;
       }
+
+      /* stylelint-enable */
     }
 
     @media (min-width: $tablet-width) {

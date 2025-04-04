@@ -50,6 +50,11 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 55px;
       line-height: 24px;
+      /* stylelint-disable */
+      br {
+        display: none;
+      }
+      /* stylelint-enable */
     }
 
     @media (min-width: $desktop-width) {

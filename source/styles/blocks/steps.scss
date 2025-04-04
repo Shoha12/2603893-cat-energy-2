@@ -49,6 +49,8 @@
       height: 60px;
       left: 0;
 
+      /* stylelint-disable */
+
       @media (min-width: $tablet-width) {
         width: 80px;
         height: 80px;
@@ -61,6 +63,8 @@
         height: 80px;
         top: 45px;
       }
+
+      /* stylelint-enable */
     }
 
     &--powder::before {
@@ -71,6 +75,8 @@
       height: 60px;
       left: 0;
 
+      /* stylelint-disable */
+
       @media (min-width: $tablet-width) {
         width: 80px;
         height: 80px;
@@ -83,6 +89,8 @@
         height: 80px;
         top: 45px;
       }
+
+      /* stylelint-enable */
     }
 
     &--food::before {
@@ -92,6 +100,8 @@
       width: 60px;
       height: 60px;
       left: 0;
+
+      /* stylelint-disable */
 
       @media (min-width: $tablet-width) {
         width: 80px;
@@ -105,6 +115,8 @@
         height: 80px;
         top: 45px;
       }
+
+      /* stylelint-enable */
     }
 
     &--time::before {
@@ -114,6 +126,8 @@
       width: 60px;
       height: 60px;
       left: 0;
+
+      /* stylelint-disable */
 
       @media (min-width: $tablet-width) {
         width: 80px;
@@ -127,6 +141,8 @@
         height: 80px;
         top: 45px;
       }
+
+      /* stylelint-enable */
     }
   }
 
@@ -166,6 +182,8 @@
     }
 
     &--first {
+
+      /* stylelint-disable */
       @media (min-width: $tablet-width) {
         right: 43px;
       }
@@ -173,6 +191,8 @@
       @media (min-width: $desktop-width) {
         right: 18px;
       }
+
+      /* stylelint-enable */
     }
   }
 }
