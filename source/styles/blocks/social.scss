@@ -15,5 +15,20 @@
 
   &__link {
     display: flex;
+    min-height: 22px;
+    min-width: 28px;
+
+    &-icon {
+      fill: #666666;
+    }
+
+    &:hover &-icon {
+      fill: #68b738;
+    }
+
+    &:active &-icon {
+      fill: $bg-color-primary;
+      opacity: 0.3;
+    }
   }
 }

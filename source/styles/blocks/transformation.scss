@@ -8,6 +8,11 @@
     min-height: 598px;
   }
 
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    min-height: 595px;
+  }
+
   &__wrapper {
     padding: 0 20px 19px;
 
@@ -182,6 +187,8 @@
     &--end {
       align-self: center;
 
+      /* stylelint-disable */
+
       @media (min-width: $tablet-width) {
         align-self: flex-end;
       }
@@ -189,6 +196,8 @@
       @media (min-width: $desktop-width) {
         align-self: center;
       }
+
+      /* stylelint-enable */
     }
   }
 }

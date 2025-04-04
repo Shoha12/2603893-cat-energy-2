@@ -10,6 +10,23 @@
     line-height: 20px;
     text-decoration: none;
 
+    &-img {
+      fill: #666666;
+    }
+
+    &:hover &-img {
+      fill: $bg-color-primary;
+    }
+
+    &:active &-img {
+      fill: $bg-color-primary;
+      opacity: 0.3;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
     @media (min-width: $tablet-width) {
       width: 162px;
     }
